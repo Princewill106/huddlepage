@@ -1,0 +1,159 @@
+/*global*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.display_flex{
+	display: flex;
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+}
+
+.div_a{
+	width: 50%;
+}
+
+.div_b{
+	float: right;
+	width: 50%;
+}
+
+.display_flex img{
+	max-width: 100%;
+	flex: 1;
+}
+
+
+
+
+.Top{
+	padding: 35px 10%;
+	background-color:hsl(208, 11%, 55%) ;
+	background-image: url("images/bg-hero-desktop.svg");
+}
+
+.Top .div_b button{
+	float: right;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border-style: hidden;
+}
+
+.Top .div_b button:hover{
+	cursor: pointer;
+}
+.Top .display_flex{
+	margin-bottom: 30px;
+}
+
+.Top .display_flex .div_a h1{
+	margin-top: 15%;
+	font-weight: 700;
+	font-size: xx-large;
+	margin-bottom: 10px;
+}
+.Top .display_flex .div_a p{
+	margin-bottom: 5px;
+}
+.Top .display_flex .div_a button{
+	background-color:hsl(322, 100%, 66%) ;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 15px;
+	border-style: solid;
+
+}
+.Top .display_flex .div_a button:hover{
+	cursor: pointer;
+}
+
+
+
+
+/* Bottom Area*/
+
+.Bottom{
+	width: 80%;
+	margin: auto;
+}
+.Bottom .display_flex{
+	box-sizing: border-box;
+	border-radius: 5px;
+	border:0px solid hsl(0 0% 83%);
+	border-color: grey;
+	padding: 20px;
+	box-shadow: 1.5rem 1.5rem 1.5rem 1.5rem hsl(5 0% 0% / 5% );
+	margin: 20px 0;
+}
+
+.Bottom .display_flex h3{
+ margin-top: 25%;
+}
+
+.unique{
+	box-sizing: border-box;
+	box-shadow: 1.5rem;
+	border:1px solid;
+	width: 60%;
+	margin: auto;
+	margin-top: 70px;
+	background-color: white;
+	z-index: auto;
+	position: relative;
+	padding: 10px 30px;
+	border-radius: 10px;
+	
+}
+.unique button{
+	padding: 10px 20px;
+	border-radius: 15px;
+	background-color:hsl(322, 100%, 66%) ;
+	margin-top: 15px ;
+}
+
+footer{
+	display: grid;
+	background-color: black;
+	width: 100%;
+	margin: auto;
+	margin-top: -40px;
+	padding: 40px;
+	grid-template-areas: 
+	"a b c d"
+	"a b c d" 
+	"a b c d";
+    grid-gap: 10px;
+    color: white;
+	
+}
+
+.item_a{
+	grid-area: a;
+	margin-top: 10px;
+}
+.item_b{
+	grid-area: b;
+	margin-top: 30px;
+}
+.item_c{
+	grid-area: c;
+	margin-top: 30px;
+}
+.item_d{
+	grid-area: d;
+	margin-top: 30px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+	body{
+	}
+	.Top{
+		background-color: hsl(208, 11%, 55%) ;
+		background-image: url("images/bg-hero-mobile.svg");
+	}
+
+}
